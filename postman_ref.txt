@@ -1,0 +1,20 @@
+Patch:
+localhost:3000/classifieds/4
+Text type: JSON application/json
+RAW:
+{"title":"Vit vatten", "description":"zookola", "price": 986, "item_image":"www.kizza.se"}
+
+
+POST:
+localhost:3000/classifieds/
+Text type: JSON application/json
+RAW:
+{"title":"Gront ol", "description":"bazzuka", "price": 67, "item_image":"www.gizmo.se"}
+
+GET: (all)
+localhost:3000/classifieds/
+
+GET:id
+localhost:3000/classifieds/1
+
+

@@ -14,6 +14,8 @@ app.use(bodyParser.urlencoded({ extended: false }));
 // parse application/json
 app.use(bodyParser.json());
 
+app.use(express.static(__dirname + '/public'));
+
 const probeData = require('./routes/probes'); // definera probes route
 app.use('/probes', probeData); // set probes route
 
@@ -60,9 +62,6 @@ function writeTodB(probeVals) {
         });
 }
 // ***************************************************************************
-
-
-
 
 
 // function writeTodB(probeVals) {
